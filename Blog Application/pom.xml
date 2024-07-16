@@ -12,11 +12,11 @@
     </parent>
 
     <!--for project information-->
-    <groupId>com.hamitmizrak</groupId>
-    <artifactId>SeniorFullStack1</artifactId>
+    <groupId>com.gulsahduzgun</groupId>
+    <artifactId>Blog-Application</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>SeniorFullStack1</name>
-    <description>SeniorFullStack1</description>
+    <name>Blog Application</name>
+    <description>Blog Application</description>
     <url/>
     <licenses>
         <license/>
