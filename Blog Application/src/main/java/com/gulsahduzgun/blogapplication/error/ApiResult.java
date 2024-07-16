@@ -10,6 +10,16 @@ import java.util.Date;
 import java.util.Locale;
 import java.util.Map;
 
+@Getter
+@Setter
+@ToString
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+@Log4j2
+
+
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class ApiResult {
     //field
     private int status;
