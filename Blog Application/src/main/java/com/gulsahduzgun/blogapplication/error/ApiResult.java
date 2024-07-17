@@ -22,7 +22,7 @@ import java.util.Map;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class ApiResult {
     //field
-    private int status;
+    private Integer status;
     private String message;
     private String error;
     private String path;
@@ -31,13 +31,13 @@ public class ApiResult {
     // private Date createdDate = new Date(System.currentTimeMillis());
 
 
-    public ApiResult(int status, String message, String path) {//constructor
+    public ApiResult(Integer status, String message, String path) {//constructor
         this.status = status;
         this.message = message;
         this.path = path;
     }
 
-    public ApiResult(int status, String error, String message, String path) {
+    public ApiResult(Integer status, String error, String message, String path) {
         this.status = status;
         this.error = error;
         this.message = message;
