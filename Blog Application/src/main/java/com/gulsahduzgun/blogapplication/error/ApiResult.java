@@ -19,7 +19,7 @@ import java.util.Map;
 @Log4j2
 
 
-@JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonInclude(JsonInclude.Include.NON_NULL)  // Not Null Guard
 public class ApiResult {
     //field
     private Integer status;

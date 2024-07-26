@@ -17,9 +17,10 @@ import java.util.Objects;
 
 @RequiredArgsConstructor
 @Log4j2
-@RestController
+@RestController // Dış dünyaya açılan kapı
 @CrossOrigin
 
+//Custom Error Handler
 public class ErrorControllerHandleWebRequest  implements ErrorController {
     private final ErrorAttributes errorAttributes;
 
@@ -43,7 +44,7 @@ public class ErrorControllerHandleWebRequest  implements ErrorController {
             List<FieldError> fieldErrorList = (List<FieldError>) attributes.get("error");
 
             for(FieldError fieldError : fieldErrorList) {
-                validationErrors.put(fieldError.getField(),fieldError.getDefaultMessage());
+                validationErrors.put(fieldError.getField(),fieldError.getDefaultMessage()); //Map<String,String> değişkenine ata
             }
 
             apiResult.setValidationErrors(validationErrors);
