@@ -13,11 +13,11 @@ public class SwaggerBean {
     @Bean
     public OpenAPI getOpenAPIMethod() {
         return  new OpenAPI().info(new Info()
-                .title("Advanced Fullstack Mastery Bootcamp by Hamit Mızrak")
+                .title("To-Do List")
                 .version("v1.0.0")
                 .description("Spring Boot & React.js")
-                .summary(" for spring boot on react js, auth: "+hashCode())
-                .description("Spring Boot & React Js & Devops")
+                .summary("To-Do List, auth: "+hashCode())
+                .description("To-Do List Application")
                 .termsOfService(" Software INC")
                 .contact(new Contact()
                         .name("Gülşah Düzgün")
