@@ -39,5 +39,5 @@ public class TaskDto implements Serializable {
     @AUniqueTask
     @NotEmpty(message = "{task.status.validation.constraints.NotNull.message}")
     @Size(min = 2, message = "{task.status.least.validation.constraints.NotNull.message}")
-    private  String title;
+    private  String taskName;
 }

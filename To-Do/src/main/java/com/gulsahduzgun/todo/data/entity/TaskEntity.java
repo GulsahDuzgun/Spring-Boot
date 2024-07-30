@@ -40,6 +40,6 @@ public class TaskEntity implements  Serializable{
     @Column(name="task")
     private  String task;
 
-    @Column(name="taskName")
+    @Column(name="task_name")
     private  String taskName;
 }
