@@ -1,4 +1,5 @@
 package com.gulsahduzgun.blogapplication.data.entity;
+import com.gulsahduzgun.blogapplication.annotation.AUniqueBlogCategoryName;
 import jakarta.persistence.*;
 
 import lombok.AllArgsConstructor;
@@ -35,5 +36,6 @@ public class BlogCategoryEntity implements  Serializable{
     private Date systemCreateDate;
 
     @Column(name="category_name")
+    @AUniqueBlogCategoryName
     private  String categoryName;
 }
