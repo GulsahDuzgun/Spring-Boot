@@ -1,4 +1,4 @@
-package com.gulsahduzgun.blogapplication.business.services.impl;
+package com.gulsahduzgun.blogapplication.business.services;
 
 import java.util.List;
 
@@ -10,14 +10,7 @@ public interface IBlogCategoriesServices<D,E> {
     public D entityToDto(E e);
     public E dtoToEntity(D d);
 
-    /////////////////////////////////////////////////////////////
-    // SPEED DATA
-    public String blogCategorySpeedData(Integer data);
 
-    // DELETE ALL
-    public String blogCategoryDeleteAllData();
-
-    ////////////////////////////////////////////////////////////
     // CRUD
     // CREATE
     public D blogCategoryServiceCreate(D d);
@@ -34,4 +27,9 @@ public interface IBlogCategoriesServices<D,E> {
     // DELETE
     public D blogCategoryServiceDeleteById(Long id);
 
+    // SPEED DATA
+    public String blogCategoryServiceSpeedData(Integer data);
+
+    // DELETE ALL
+    public String blogCategoryServiceDeleteAllData();
 } //end interface
