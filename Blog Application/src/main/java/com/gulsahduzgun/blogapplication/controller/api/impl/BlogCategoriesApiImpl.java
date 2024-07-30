@@ -11,8 +11,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-
-// LOMBOK
 @RequiredArgsConstructor
 @Log4j2
 
@@ -29,62 +27,48 @@ public class BlogCategoriesApiImpl implements IBlogCategoriesApi<BlogCategoryDto
 
     /////////////////////////////////////////////////////////////
     // SPEED DATA
+    // http://localhost:4444/blog/categories/api/v1/speed
+    // http://localhost:4444/blog/categories/api/v1/speed/0
     // http://localhost:4444/blog/categories/api/v1/speed/5
     @Override
-    @GetMapping(value="/speed/{id}")
-    public ResponseEntity<String> blogCategoryApiSpeedData( @PathVariable(name="id") Integer data) {
+    @GetMapping(value={"/speed","/speed/{id}"})
+    public ResponseEntity<String> blogCategoryApiSpeedData( @PathVariable(name="id",required = false) Integer data) {
         return ResponseEntity.ok(iBlogCategoriesServices.blogCategoryServiceSpeedData(data));
     }
 
-
-    // DELETE ALL
-    // http://localhost:4444/blog/categories/api/v1/delete/all
     @Override
     @DeleteMapping(value="/delete/all")
     public ResponseEntity<String> blogCategoryApiDeleteAllData() {
         return ResponseEntity.ok(iBlogCategoriesServices.blogCategoryServiceDeleteAllData());
     }
 
-    ////////////////////////////////////////////////////////////
-    // CRUD
-
-    // CREATE
-    // http://localhost:4444/blog/categories/api/v1/create
     @Override
     @PostMapping("/create")
     public ResponseEntity<?> blogCategoryApiCreate(@Valid @RequestBody BlogCategoryDto blogCategoryDto) {
         return ResponseEntity.ok().body(iBlogCategoriesServices.blogCategoryServiceCreate(blogCategoryDto));
     }
 
-    // LIST
-    // http://localhost:4444/blog/categories/api/v1/list
     @Override
     @GetMapping("/list")
     public ResponseEntity<List<BlogCategoryDto>> blogCategoryApiList() {
         return ResponseEntity.status(HttpStatus.OK).body(iBlogCategoriesServices.blogCategoryServiceList());
     }
 
-    // FIND
-    // http://localhost:4444/blog/categories/api/v1/find/1
     @Override
-    @GetMapping("/find/{id}")
-    public ResponseEntity<?> blogCategoryApiFindById(@PathVariable(name="id") Long id) {
+    @GetMapping({"/find","/find/{id}"})
+    public ResponseEntity<?> blogCategoryApiFindById(@PathVariable(name="id",required = false) Long id) {
         return ResponseEntity.status(HttpStatus.OK).body(iBlogCategoriesServices.blogCategoryServiceFindById(id));
     }
 
-    // UPDATE
-    // http://localhost:4444/blog/categories/api/v1/update/1
     @Override
-    @PutMapping("/update/{id}")
-    public ResponseEntity<?> blogCategoryApiUpdateById(@PathVariable(name="id") Long id, @Valid @RequestBody BlogCategoryDto blogCategoryDto) {
+    @PutMapping({"/update","/update/{id}"})
+    public ResponseEntity<?> blogCategoryApiUpdateById(@PathVariable(name="id",required = false) Long id, @Valid @RequestBody BlogCategoryDto blogCategoryDto) {
         return ResponseEntity.ok().body(iBlogCategoriesServices.blogCategoryServiceUpdateById(id,blogCategoryDto));
     }
 
-    // DELETE
-    // http://localhost:4444/blog/categories/api/v1/delete/1
     @Override
-    @DeleteMapping("/delete/{id}")
-    public ResponseEntity<?> blogCategoryApiDeleteById(@PathVariable(name="id") Long id) {
+    @DeleteMapping({"/delete","/delete/{id}"})
+    public ResponseEntity<?> blogCategoryApiDeleteById(@PathVariable(name="id",required = false) Long id) {
         return new ResponseEntity<>(iBlogCategoriesServices.blogCategoryServiceDeleteById(id), HttpStatus.OK);
     }
 
