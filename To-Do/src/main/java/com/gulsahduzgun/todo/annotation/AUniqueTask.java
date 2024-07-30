@@ -13,7 +13,7 @@ import java.lang.annotation.Target;
     @Target({ ElementType.FIELD})
     @Retention(RetentionPolicy.RUNTIME)
     @Constraint(validatedBy = {UniqueTaskStatusValidation.class})
-    public @interface AUniqueTaskStatusName {
+    public @interface AUniqueTask {
         String message() default "{task.status.unique.validation.constraints.NotNull.message}";
 
         Class<?>[] groups() default {};

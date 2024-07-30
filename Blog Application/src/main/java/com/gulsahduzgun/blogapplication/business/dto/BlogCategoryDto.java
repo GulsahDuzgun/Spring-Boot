@@ -1,5 +1,6 @@
 package com.gulsahduzgun.blogapplication.business.dto;
 
+import com.gulsahduzgun.blogapplication.annotation.AUniqueBlogCategoryName;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
@@ -27,5 +28,6 @@ public class BlogCategoryDto implements Serializable {
 
     @NotEmpty(message = "{blog.category.validation.constraints.NotNull.message}")
     @Size(min = 2, message = "{blog.category.least.validation.constraints.NotNull.message}")
+    @AUniqueBlogCategoryName
     private  String categoryName;
 }

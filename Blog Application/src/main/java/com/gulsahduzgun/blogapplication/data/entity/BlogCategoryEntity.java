@@ -36,6 +36,5 @@ public class BlogCategoryEntity implements  Serializable{
     private Date systemCreateDate;
 
     @Column(name="category_name")
-    @AUniqueBlogCategoryName
     private  String categoryName;
 }

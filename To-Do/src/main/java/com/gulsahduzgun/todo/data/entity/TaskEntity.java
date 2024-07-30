@@ -18,17 +18,17 @@ import java.util.Date;
 @Log4j2
 @Builder
 
-@Entity(name="TaskStatus")
-@Table(name="taskStatus")
+@Entity(name="task")
+@Table(name="task")
 
 // BlogCategoryDto(1)- BlogDto(N)
-public class TaskStatusEntity implements  Serializable{
+public class TaskEntity implements  Serializable{
     public static final Long serialVersionUID = 1L;
 
     @Id
     @GeneratedValue(strategy =  GenerationType.IDENTITY)
-    @Column(name="status_id",unique = true,nullable = false, updatable = false, insertable = true)
-    private  Long statusID;
+    @Column(name="task_id",unique = true,nullable = false, updatable = false, insertable = true)
+    private  Long taskID;
 
     @Temporal(TemporalType.TIMESTAMP)
     @CreationTimestamp
@@ -36,4 +36,10 @@ public class TaskStatusEntity implements  Serializable{
 
     @Column(name="status_name")
     private  String statusName;
+
+    @Column(name="task")
+    private  String task;
+
+    @Column(name="taskName")
+    private  String taskName;
 }
