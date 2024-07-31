@@ -91,12 +91,12 @@ class ToDoApplicationTests implements ITestCRUD {
         //assertThat(iTaskRepository.findById(1L).isPresent()).isFalse();
         assertThat(iTaskRepository.existsById(1L)).isFalse();
     }
-    */
+
     @Test
     public void getFail(){
         Assertions.fail("Hata gönderildi");
     }
-
+  */
     @AfterEach
     void getAfterEachTasks() {
         System.out.println("AfterEach comes after all of these methods  ");
