@@ -1,5 +1,6 @@
 package com.gulsahduzgun.todo.data.entity;
 
+import com.gulsahduzgun.todo.audit.AuditingAwareBaseEntity;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -22,7 +23,7 @@ import java.util.Date;
 @Table(name="task")
 
 // BlogCategoryDto(1)- BlogDto(N)
-public class TaskEntity implements  Serializable{
+public class TaskEntity extends AuditingAwareBaseEntity implements  Serializable{
     public static final Long serialVersionUID = 1L;
 
     @Id
