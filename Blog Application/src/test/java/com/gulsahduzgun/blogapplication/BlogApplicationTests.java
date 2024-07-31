@@ -89,11 +89,13 @@ public void testDeleteDatabase() {
     //assertThat(iBlogCategoryRepository.findById(1L).isPresent()).isFalse();
     assertThat(iBlogCategoryRepository.existsById(1L)).isFalse();
 }
-*/
+
 @Test
 public void getFail(){
     Assertions.fail("Hata gönderildi");
 }
+
+ */
 
 @AfterEach
 void getAfterEachBlogCategories() {
