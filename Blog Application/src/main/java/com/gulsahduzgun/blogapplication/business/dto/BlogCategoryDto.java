@@ -1,6 +1,7 @@
 package com.gulsahduzgun.blogapplication.business.dto;
 
 import com.gulsahduzgun.blogapplication.annotation.AUniqueBlogCategoryName;
+import com.gulsahduzgun.blogapplication.audit.AuditingAwareBaseEntity;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
@@ -18,7 +19,7 @@ import java.util.Date;
 @Log4j2
 @Builder
 
-public class BlogCategoryDto implements Serializable {
+public class BlogCategoryDto extends AuditingAwareBaseEntity implements Serializable {
 
     public static final Long serialVersionUID = 1L;
     private Long categoryID;
