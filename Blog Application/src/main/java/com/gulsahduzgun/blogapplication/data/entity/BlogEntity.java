@@ -3,8 +3,6 @@ import com.gulsahduzgun.blogapplication.audit.AuditingAwareBaseEntity;
 import jakarta.persistence.*;
 import lombok.Builder;
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
 import lombok.extern.log4j.Log4j2;
 import org.hibernate.annotations.CreationTimestamp;
 

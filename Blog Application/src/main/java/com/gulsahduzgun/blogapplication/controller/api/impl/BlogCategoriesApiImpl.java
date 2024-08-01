@@ -2,7 +2,7 @@ package com.gulsahduzgun.blogapplication.controller.api.impl;
 import com.gulsahduzgun.blogapplication.business.dto.BlogCategoryDto;
 import com.gulsahduzgun.blogapplication.business.services.IBlogCategoriesServices;
 import com.gulsahduzgun.blogapplication.controller.api.IBlogCategoriesApi;
-import com.gulsahduzgun.blogapplication.utils.frontend.React;
+import com.gulsahduzgun.blogapplication.utils.frontend.ReactFrontend;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
@@ -17,8 +17,8 @@ import java.util.List;
 // API
 @RestController
 //@CrossOrigin
-@CrossOrigin(origins = React.REACT_FRONTEND_PORT_URL) // http://localhost:3000
-@RequestMapping("/blog/categories/api/v1")
+@CrossOrigin(origins = ReactFrontend.REACT_FRONTEND_PORT_URL) // http://localhost:3000
+@RequestMapping("/blog/categories/api/v100")
 public class BlogCategoriesApiImpl implements IBlogCategoriesApi<BlogCategoryDto> {
 
     // INJECTION
@@ -27,9 +27,9 @@ public class BlogCategoriesApiImpl implements IBlogCategoriesApi<BlogCategoryDto
 
     /////////////////////////////////////////////////////////////
     // SPEED DATA
-    // http://localhost:4444/blog/categories/api/v1/speed
-    // http://localhost:4444/blog/categories/api/v1/speed/0
-    // http://localhost:4444/blog/categories/api/v1/speed/5
+    // http://localhost:4444/blog/categories/api/v100/speed
+    // http://localhost:4444/blog/categories/api/v100/speed/0
+    // http://localhost:4444/blog/categories/api/v100/speed/5
     @Override
     @GetMapping(value={"/speed","/speed/{id}"})
     public ResponseEntity<String> blogCategoryApiSpeedData( @PathVariable(name="id",required = false) Integer data) {
