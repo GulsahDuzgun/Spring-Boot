@@ -21,6 +21,7 @@
 
 html {
   font-size: 62.5%;
+  font-family: var(--font-familt-light);
 }
 
 body {
@@ -83,7 +84,43 @@ body {
 }
 
 .taskContainer {
+  list-style: none;
+  font-size: 1.4rem;
+  padding: 2.4rem 0rem;
 }
 
-.taskItem {
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.task:not(:last-child) {
+  margin-bottom: 1.2rem;
+}
+
+.task .task--detail {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.task .task--title {
+  font-family: var(--font-familt-bold);
+}
+
+.task .task--btn {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.task .task--btn button {
+  font-size: 1.2rem;
+  display: inline-flex;
+  align-items: center;
+  background-color: #212121;
+  padding: 0.4rem 0.6rem;
+  cursor: pointer;
+  border-radius: 3px;
+  color: #fff;
 }
