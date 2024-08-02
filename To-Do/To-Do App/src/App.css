@@ -27,6 +27,8 @@ html {
 body {
   box-sizing: border-box;
   padding: 4rem 8rem;
+  background-color: #f1f9ff;
+  border: 11px;
 }
 
 .container {
