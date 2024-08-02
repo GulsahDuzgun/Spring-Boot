@@ -1,8 +1,6 @@
 package com.gulsahduzgun.blogapplication.data.entity;
-import com.gulsahduzgun.blogapplication.annotation.AUniqueBlogCategoryName;
 import com.gulsahduzgun.blogapplication.audit.AuditingAwareBaseEntity;
 import jakarta.persistence.*;
-
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -12,30 +10,53 @@ import org.hibernate.annotations.CreationTimestamp;
 
 import java.io.Serializable;
 import java.util.Date;
+import java.util.List;
 
 // LOMBOK
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Log4j2
 @Builder
+@Log4j2
 
-@Entity(name="BlogCategories")
-@Table(name="blogCategories")
+// ENTITY
+@Entity(name = "BlogCategories") // Sql JOIN için yazdım
+@Table(name = "blogCategory")
 
-// BlogCategoryDto(1)- BlogDto(N)
-public class BlogCategoryEntity extends AuditingAwareBaseEntity implements  Serializable{
+// Category(1) Blog(N)
+public class BlogCategoryEntity extends AuditingAwareBaseEntity implements Serializable {
+
+    // SERILEŞTIRME
     public static final Long serialVersionUID = 1L;
 
+    // ID
     @Id
-    @GeneratedValue(strategy =  GenerationType.IDENTITY)
-    @Column(name="category_id",unique = true,nullable = false, updatable = false, insertable = true)
-    private  Long categoryID;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name="category_id",unique = true,nullable = false,insertable = true,updatable = false)
+    private Long categoryId;
 
-    @Temporal(TemporalType.TIMESTAMP)
+    // CATEGORY NAME
+    @Column(name = "category_name")
+    private String categoryName;
+
+    // DATE
     @CreationTimestamp
-    private Date systemCreateDate;
+    @Temporal(TemporalType.TIMESTAMP)
+    private Date systemCreatedDate;
 
-    @Column(name="category_name")
-    private  String categoryName;
+    // RELATION
+    @OneToMany(mappedBy = "relationCategoryEntity",fetch = FetchType.LAZY,cascade = CascadeType.ALL)
+    List<BlogEntity> relationBlogEntityList;
+
+    // Constructor (parametreli)
+    public BlogCategoryEntity(String categoryName) {
+        this.categoryName = categoryName;
+    }
+
+    // Constructor (parametreli)
+    public BlogCategoryEntity(String categoryName, List<BlogEntity> relationBlogEntityList) {
+        this.categoryName = categoryName;
+        this.relationBlogEntityList = relationBlogEntityList;
+    }
+
 }

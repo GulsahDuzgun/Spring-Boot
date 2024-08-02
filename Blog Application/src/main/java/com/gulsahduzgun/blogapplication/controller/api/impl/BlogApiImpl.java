@@ -1,6 +1,6 @@
 package com.gulsahduzgun.blogapplication.controller.api.impl;
 import com.gulsahduzgun.blogapplication.business.dto.BlogDto;
-import com.gulsahduzgun.blogapplication.business.services.IBlogServices;
+import com.gulsahduzgun.blogapplication.business.services.impl.IBlogServices;
 import com.gulsahduzgun.blogapplication.controller.api.IBlogApi;
 import com.gulsahduzgun.blogapplication.utils.frontend.ReactFrontend;
 import jakarta.validation.Valid;
@@ -26,11 +26,12 @@ public class BlogApiImpl implements IBlogApi<BlogDto> {
 
     // SPEED DATA
     // http://localhost:4444/blog/api/v100/speed/data
+    /*
     @Override
     @GetMapping(value="/speed/{data}")
-    public ResponseEntity<String> blogApiSpeedData(@PathVariable(name="data") Integer data) {
+    public ResponseEntity<List<BlogDto>> blogApiSpeedData(@PathVariable(name="data") Long data) {
         return ResponseEntity.ok(iBlogServices.blogServiceSpeedData(data));
-    }
+    }*/
 
     // ALL DELETE
     // http://localhost:4444/blog/api/v100/delete/all
@@ -69,11 +70,11 @@ public class BlogApiImpl implements IBlogApi<BlogDto> {
 
     // UPDATE
     // http://localhost:4444/blog/api/v100/update/1
-    @Override
+    /*@Override
     @PutMapping("/update/{id}")
-    public ResponseEntity<?> blogApiUpdateById(@PathVariable(name = "id") Long id, @Valid @RequestBody  BlogDto blogDto) {
-        return ResponseEntity.ok(iBlogServices.blogServiceUpdateById(id,blogDto));
-    }
+    public ResponseEntity<?> blogApiUpdateById(@PathVariable(name = "id") Long id, @Valid @RequestBody BlogDto blogDto) {
+        return ResponseEntity.ok(iBlogServices.blogServiceUpdateById(id, blogDto));
+    }*/
 
     // DELETE
     // http://localhost:4444/blog/api/v100/delete/1

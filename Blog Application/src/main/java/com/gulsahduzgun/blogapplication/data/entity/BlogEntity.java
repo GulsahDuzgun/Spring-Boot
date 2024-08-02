@@ -1,6 +1,7 @@
 package com.gulsahduzgun.blogapplication.data.entity;
 import com.gulsahduzgun.blogapplication.audit.AuditingAwareBaseEntity;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.extern.log4j.Log4j2;
@@ -11,49 +12,49 @@ import java.util.Date;
 
 // LOMBOK
 @Data
-@Log4j2
+@AllArgsConstructor
 @Builder
+@Log4j2
+
 
 // ENTITY
-@Entity(name = "Blogs")
-@Table(name="blogs")
-// BlogEntity(N) - BlogCategoryEntity(1)
+@Entity(name = "Blogs") // Sql JOIN için yazdım
+@Table(name = "blog")
+
+// Blog(N)  Category(1)
 public class BlogEntity extends AuditingAwareBaseEntity implements Serializable {
 
-    // Serileştirme
-    public static final Long serialVersionUID=1L;
+    // SERILEŞTIRME
+    public static final Long serialVersionUID = 1L;
 
     // ID
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "blog_id",unique=true, nullable=false, updatable=false,insertable = true)
-    private Long blogID;
+    @Column(name="blog_id",unique = true,nullable = false,insertable = true,updatable = false)
+    private Long blogId;
 
     // DATE
-    @Temporal(TemporalType.TIMESTAMP)
     @CreationTimestamp
+    @Temporal(TemporalType.TIMESTAMP)
     private Date systemCreatedDate;
 
     // Embedded
     @Embedded
-    private EmbeddableBlogEntity embeddableBlogEntity=new EmbeddableBlogEntity();
+    private EmbeddableBlogEntity blogEntityEmbeddable=new EmbeddableBlogEntity();
 
-    // RELATION
-    // BlogEntity(N) - BlogCategoryEntity(1)
+    //  RELATION
+    // Blog(N)  Category(1)
     @ManyToOne(fetch = FetchType.LAZY,optional = false)
     @JoinColumn(name="category_id",nullable = false)
-    private BlogCategoryEntity relationBlogCategoryEntity;
+    private BlogCategoryEntity relationCategoryEntity;
 
-    // Constructor(Parametresiz)
+    // Constructor (Parametresiz)
     public BlogEntity() {
     }
 
-    // Constructor(Parametreli)
+    // Constructor (Parametreli)
     public BlogEntity(EmbeddableBlogEntity embeddableBlogEntity, BlogCategoryEntity relationBlogCategoryEntity) {
-        this.embeddableBlogEntity = embeddableBlogEntity;
-        this.relationBlogCategoryEntity = relationBlogCategoryEntity;
+        this.blogEntityEmbeddable = embeddableBlogEntity;
+        this.relationCategoryEntity = relationBlogCategoryEntity;
     }
-
-    // LOMBOK
-
 }

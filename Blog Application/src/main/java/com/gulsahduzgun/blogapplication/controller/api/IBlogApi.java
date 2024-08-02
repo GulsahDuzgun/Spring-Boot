@@ -1,32 +1,34 @@
 package com.gulsahduzgun.blogapplication.controller.api;
+
+
 import org.springframework.http.ResponseEntity;
 
 import java.util.List;
 
-// D: Dto
 public interface IBlogApi<D> {
 
-    // SPEED DATA
-    public ResponseEntity<String> blogApiSpeedData(Integer data);
-
-    // DELETE ALL
+    // ALL DELETE
     public ResponseEntity<String> blogApiDeleteAllData();
 
-    ////////////////////////////////////////////////////////////
-    // CRUD
+    // SPEED DATA
+   // public ResponseEntity<List<D>> blogApiSpeedData(Long key);
+
+    ////////////////////////////////////////////////////////////////////////////
+
+    // C R U D
     // CREATE
-    public ResponseEntity<?> blogApiCreate(D d);
+    public ResponseEntity<?>  blogApiCreate(D d);
 
     // LIST
-    public ResponseEntity<List<D>> blogApiList();
+    public ResponseEntity<List<D>>  blogApiList();
 
-    // FIND
-    public ResponseEntity<?> blogApiFindById(Long id);
+    // FIND BY
+    public ResponseEntity<?>  blogApiFindById(Long id);
 
     // UPDATE
-    public ResponseEntity<?> blogApiUpdateById(Long id,D d);
+    //public ResponseEntity<?>  blogApiUpdate(Long id,D d);
 
     // DELETE
-    public ResponseEntity<?> blogApiDeleteById(Long id);
+    public ResponseEntity<?>  blogApiDeleteById(Long id);
 
 }
