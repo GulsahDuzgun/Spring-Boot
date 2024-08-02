@@ -10,7 +10,7 @@ export default function TaskList() {
   });
 
   return (
-    <div>
+    <div className='tasksContainer'>
       <TaskItem tasks={data} />
     </div>
   );
