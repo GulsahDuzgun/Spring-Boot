@@ -1,0 +1,42 @@
+/*
+  SPACING SYSTEM (px)
+  2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+  FONT SIZE SYSTEM (px)
+  10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+:root {
+  --font-familt-bold: "Calistoga", serif;
+  --font-familt-light: "Bitter", serif;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  padding: 4rem 8rem;
+}
+
+.container {
+  background-color: #e7f5ff;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.header {
+  font-size: 4rem;
+  font-family: var(--font-familt-bold);
+  text-align: center;
+  padding: 4rem 8rem;
+}

@@ -10,8 +10,8 @@ function App() {
       <div className='container'>
         <Header />
         <main className='main'>
-          <Form />
           <StatusButtonsRow />
+          <Form />
           <TaskList />
         </main>
       </div>
