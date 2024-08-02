@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.gulsahduzgun.todo.ToDoApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.425 s - in com.gulsahduzgun.todo.ToDoApplicationTests

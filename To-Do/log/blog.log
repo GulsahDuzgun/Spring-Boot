@@ -1,0 +1,231 @@
+2024-07-31T00:56:47.307+03:00  INFO 1448 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-31T00:56:47.509+03:00  INFO 1448 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-31T00:56:47.607+03:00  INFO 1448 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-31T00:57:11.361+03:00  INFO 8584 --- [restartedMain] com.gulsahduzgun.todo.ToDoApplication    : Starting ToDoApplication using Java 21.0.2 with PID 8584 (D:\Spring-Boot\To-Do\target\classes started by duzgu in D:\Spring-Boot\To-Do)
+2024-07-31T00:57:11.397+03:00  INFO 8584 --- [restartedMain] com.gulsahduzgun.todo.ToDoApplication    : The following 1 profile is active: "frontend"
+2024-07-31T00:57:11.441+03:00  INFO 8584 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-07-31T00:57:11.442+03:00  INFO 8584 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-07-31T00:57:12.285+03:00  INFO 8584 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-31T00:57:12.327+03:00  INFO 8584 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37 ms. Found 1 JPA repository interfaces.
+2024-07-31T00:57:12.876+03:00  INFO 8584 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 4445 (http)
+2024-07-31T00:57:12.883+03:00  INFO 8584 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-31T00:57:12.883+03:00  INFO 8584 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2024-07-31T00:57:12.946+03:00  INFO 8584 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-31T00:57:12.946+03:00  INFO 8584 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1504 ms
+2024-07-31T00:57:13.024+03:00  INFO 8584 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-31T00:57:13.212+03:00  INFO 8584 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./memory_persist/blog user=SA
+2024-07-31T00:57:13.213+03:00  INFO 8584 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-31T00:57:13.223+03:00  INFO 8584 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./memory_persist/blog'
+2024-07-31T00:57:13.280+03:00 DEBUG 8584 --- [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2024-07-31T00:57:13.280+03:00 DEBUG 8584 --- [restartedMain] o.s.w.s.r.ResourceUrlEncodingFilter      : Filter 'resourceUrlEncodingFilter' configured for use
+2024-07-31T00:57:13.622+03:00  INFO 8584 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-31T00:57:14.344+03:00  INFO 8584 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-31T00:57:14.750+03:00  WARN 8584 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-31T00:57:14.839+03:00 DEBUG 8584 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-07-31T00:57:14.905+03:00 DEBUG 8584 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2024-07-31T00:57:15.313+03:00 DEBUG 8584 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2024-07-31T00:57:15.321+03:00 DEBUG 8584 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-07-31T00:57:15.345+03:00  WARN 8584 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-07-31T00:57:15.646+03:00  INFO 8584 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-07-31T00:57:15.651+03:00  INFO 8584 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 16 endpoint(s) beneath base path '/actuator'
+2024-07-31T00:57:15.727+03:00  INFO 8584 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 4445 (http) with context path ''
+2024-07-31T00:57:15.737+03:00  INFO 8584 --- [restartedMain] com.gulsahduzgun.todo.ToDoApplication    : Started ToDoApplication in 4.76 seconds (process running for 5.43)
+2024-07-31T00:57:15.744+03:00  INFO 8584 --- [restartedMain] c.g.t.u.commandlinerunner.MainRunner     : Blog Categories
+2024-07-31T00:57:16.055+03:00  INFO 8584 --- [RMI TCP Connection(2)-172.27.80.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-31T00:57:16.056+03:00  INFO 8584 --- [RMI TCP Connection(2)-172.27.80.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-31T00:57:16.056+03:00 DEBUG 8584 --- [RMI TCP Connection(2)-172.27.80.1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-07-31T00:57:16.056+03:00 DEBUG 8584 --- [RMI TCP Connection(2)-172.27.80.1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-07-31T00:57:16.056+03:00 DEBUG 8584 --- [RMI TCP Connection(2)-172.27.80.1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-07-31T00:57:16.057+03:00 DEBUG 8584 --- [RMI TCP Connection(2)-172.27.80.1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@5a6fc20d
+2024-07-31T00:57:16.057+03:00 DEBUG 8584 --- [RMI TCP Connection(2)-172.27.80.1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@6a8e45a9
+2024-07-31T00:57:16.058+03:00 DEBUG 8584 --- [RMI TCP Connection(2)-172.27.80.1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-07-31T00:57:16.058+03:00  INFO 8584 --- [RMI TCP Connection(2)-172.27.80.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-07-31T00:57:24.317+03:00  INFO 8584 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-31T00:57:24.569+03:00  INFO 8584 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-31T00:57:24.612+03:00  INFO 8584 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-31T00:57:30.108+03:00  INFO 15820 --- [main] c.g.todo.ToDoApplicationTests            : Starting ToDoApplicationTests using Java 21.0.2 with PID 15820 (started by duzgu in D:\Spring-Boot\To-Do)
+2024-07-31T00:57:30.109+03:00  INFO 15820 --- [main] c.g.todo.ToDoApplicationTests            : The following 1 profile is active: "frontend"
+2024-07-31T00:57:30.141+03:00 DEBUG 15820 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7668d560
+2024-07-31T00:57:31.297+03:00  INFO 15820 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-31T00:57:31.359+03:00  INFO 15820 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51 ms. Found 1 JPA repository interfaces.
+2024-07-31T00:57:32.371+03:00  INFO 15820 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-31T00:57:32.406+03:00  INFO 15820 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-31T00:57:32.616+03:00  INFO 15820 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./memory_persist/blog user=SA
+2024-07-31T00:57:32.618+03:00  INFO 15820 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-31T00:57:33.502+03:00  INFO 15820 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-31T00:57:34.276+03:00  WARN 15820 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-31T00:57:34.438+03:00 DEBUG 15820 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-07-31T00:57:34.563+03:00 DEBUG 15820 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2024-07-31T00:57:35.299+03:00 DEBUG 15820 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2024-07-31T00:57:35.309+03:00 DEBUG 15820 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-07-31T00:57:35.346+03:00  WARN 15820 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-07-31T00:57:35.763+03:00  INFO 15820 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./memory_persist/blog'
+2024-07-31T00:57:35.790+03:00  INFO 15820 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2024-07-31T00:57:35.864+03:00  INFO 15820 --- [main] c.g.todo.ToDoApplicationTests            : Started ToDoApplicationTests in 6.149 seconds (process running for 7.368)
+2024-07-31T00:57:35.947+03:00  INFO 15820 --- [main] c.g.t.u.commandlinerunner.MainRunner     : Blog Categories
+2024-07-31T00:57:36.557+03:00  INFO 15820 --- [main] c.g.todo.ToDoApplicationTests            : BeforeEach comes before running test methods
+2024-07-31T00:57:36.605+03:00  INFO 15820 --- [main] c.g.todo.ToDoApplicationTests            : AfterEach comes after all of these methods 
+2024-07-31T00:57:36.619+03:00  INFO 15820 --- [main] c.g.todo.ToDoApplicationTests            : BeforeEach comes before running test methods
+2024-07-31T00:57:36.784+03:00  INFO 15820 --- [main] c.g.todo.ToDoApplicationTests            : AfterEach comes after all of these methods 
+2024-07-31T00:57:36.788+03:00  INFO 15820 --- [main] c.g.todo.ToDoApplicationTests            : BeforeEach comes before running test methods
+2024-07-31T00:57:36.789+03:00  INFO 15820 --- [main] c.g.todo.ToDoApplicationTests            : AfterEach comes after all of these methods 
+2024-07-31T00:57:36.798+03:00  INFO 15820 --- [main] c.g.todo.ToDoApplicationTests            : BeforeEach comes before running test methods
+2024-07-31T00:57:36.822+03:00  INFO 15820 --- [main] c.g.todo.ToDoApplicationTests            : AfterEach comes after all of these methods 
+2024-07-31T00:57:36.826+03:00  INFO 15820 --- [main] c.g.todo.ToDoApplicationTests            : BeforeEach comes before running test methods
+2024-07-31T00:57:36.829+03:00  INFO 15820 --- [main] c.g.todo.ToDoApplicationTests            : AfterEach comes after all of these methods 
+2024-07-31T00:57:36.834+03:00  INFO 15820 --- [main] c.g.todo.ToDoApplicationTests            : AfterAll comes after all methods have run
+2024-07-31T00:57:36.839+03:00 DEBUG 15820 --- [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@7668d560, started on Wed Jul 31 03:27:30 IST 2024
+2024-07-31T00:57:36.846+03:00  INFO 15820 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-31T00:57:36.851+03:00 ERROR 15820 --- [SpringApplicationShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2024-07-31T00:57:36.854+03:00 ERROR 15820 --- [SpringApplicationShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2024-07-31T00:57:36.857+03:00  WARN 15820 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'entityManagerFactory': org.hibernate.exception.JDBCConnectionException: Unable to release JDBC Connection used for DDL execution [Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]] [n/a]
+2024-07-31T00:57:36.858+03:00  INFO 15820 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-31T00:57:36.861+03:00  INFO 15820 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-31T00:59:05.996+03:00  INFO 6600 --- [main] c.g.todo.ToDoApplicationTests            : Starting ToDoApplicationTests using Java 21.0.2 with PID 6600 (started by duzgu in D:\Spring-Boot\To-Do)
+2024-07-31T00:59:05.998+03:00  INFO 6600 --- [main] c.g.todo.ToDoApplicationTests            : The following 1 profile is active: "frontend"
+2024-07-31T00:59:06.033+03:00 DEBUG 6600 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7668d560
+2024-07-31T00:59:07.281+03:00  INFO 6600 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-31T00:59:07.355+03:00  INFO 6600 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61 ms. Found 1 JPA repository interfaces.
+2024-07-31T00:59:08.515+03:00  INFO 6600 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-31T00:59:08.551+03:00  INFO 6600 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-31T00:59:08.781+03:00  INFO 6600 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./memory_persist/blog user=SA
+2024-07-31T00:59:08.783+03:00  INFO 6600 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-31T00:59:09.570+03:00  INFO 6600 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-31T00:59:10.409+03:00  WARN 6600 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-31T00:59:10.603+03:00 DEBUG 6600 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-07-31T00:59:10.723+03:00 DEBUG 6600 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2024-07-31T00:59:11.562+03:00 DEBUG 6600 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2024-07-31T00:59:11.572+03:00 DEBUG 6600 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-07-31T00:59:11.609+03:00  WARN 6600 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-07-31T00:59:12.034+03:00  INFO 6600 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./memory_persist/blog'
+2024-07-31T00:59:12.060+03:00  INFO 6600 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2024-07-31T00:59:12.140+03:00  INFO 6600 --- [main] c.g.todo.ToDoApplicationTests            : Started ToDoApplicationTests in 6.556 seconds (process running for 7.689)
+2024-07-31T00:59:12.215+03:00  INFO 6600 --- [main] c.g.t.u.commandlinerunner.MainRunner     : Blog Categories
+2024-07-31T00:59:12.806+03:00  INFO 6600 --- [main] c.g.todo.ToDoApplicationTests            : BeforeEach comes before running test methods
+2024-07-31T00:59:12.851+03:00  INFO 6600 --- [main] c.g.todo.ToDoApplicationTests            : AfterEach comes after all of these methods 
+2024-07-31T00:59:12.862+03:00  INFO 6600 --- [main] c.g.todo.ToDoApplicationTests            : BeforeEach comes before running test methods
+2024-07-31T00:59:12.996+03:00  INFO 6600 --- [main] c.g.todo.ToDoApplicationTests            : AfterEach comes after all of these methods 
+2024-07-31T00:59:13.001+03:00  INFO 6600 --- [main] c.g.todo.ToDoApplicationTests            : BeforeEach comes before running test methods
+2024-07-31T00:59:13.002+03:00  INFO 6600 --- [main] c.g.todo.ToDoApplicationTests            : AfterEach comes after all of these methods 
+2024-07-31T00:59:13.013+03:00  INFO 6600 --- [main] c.g.todo.ToDoApplicationTests            : BeforeEach comes before running test methods
+2024-07-31T00:59:13.037+03:00  INFO 6600 --- [main] c.g.todo.ToDoApplicationTests            : AfterEach comes after all of these methods 
+2024-07-31T00:59:13.040+03:00  INFO 6600 --- [main] c.g.todo.ToDoApplicationTests            : BeforeEach comes before running test methods
+2024-07-31T00:59:13.045+03:00  INFO 6600 --- [main] c.g.todo.ToDoApplicationTests            : AfterEach comes after all of these methods 
+2024-07-31T00:59:13.049+03:00  INFO 6600 --- [main] c.g.todo.ToDoApplicationTests            : AfterAll comes after all methods have run
+2024-07-31T00:59:13.056+03:00 DEBUG 6600 --- [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@7668d560, started on Wed Jul 31 03:29:06 IST 2024
+2024-07-31T00:59:13.060+03:00  INFO 6600 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-31T00:59:13.065+03:00 ERROR 6600 --- [SpringApplicationShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2024-07-31T00:59:13.067+03:00 ERROR 6600 --- [SpringApplicationShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2024-07-31T00:59:13.069+03:00  WARN 6600 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'entityManagerFactory': org.hibernate.exception.JDBCConnectionException: Unable to release JDBC Connection used for DDL execution [Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]] [n/a]
+2024-07-31T00:59:13.069+03:00  INFO 6600 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-31T00:59:13.072+03:00  INFO 6600 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-31T11:03:53.857+03:00  INFO 5404 --- [main] c.g.todo.ToDoApplicationTests            : Starting ToDoApplicationTests using Java 21.0.2 with PID 5404 (started by duzgu in D:\Spring-Boot\To-Do)
+2024-07-31T11:03:53.888+03:00  INFO 5404 --- [main] c.g.todo.ToDoApplicationTests            : The following 1 profile is active: "frontend"
+2024-07-31T11:03:53.935+03:00 DEBUG 5404 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@4287d447
+2024-07-31T11:03:55.256+03:00  INFO 5404 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-31T11:03:55.303+03:00  INFO 5404 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 1 JPA repository interfaces.
+2024-07-31T11:03:56.514+03:00  INFO 5404 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-31T11:03:56.561+03:00  INFO 5404 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-31T11:03:56.858+03:00  INFO 5404 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./memory_persist/blog user=SA
+2024-07-31T11:03:56.858+03:00  INFO 5404 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-31T11:03:57.767+03:00  INFO 5404 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-31T11:03:58.654+03:00  WARN 5404 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-31T11:03:58.842+03:00 DEBUG 5404 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-07-31T11:03:58.967+03:00 DEBUG 5404 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2024-07-31T11:03:59.754+03:00 DEBUG 5404 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2024-07-31T11:03:59.770+03:00 DEBUG 5404 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-07-31T11:03:59.801+03:00  WARN 5404 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-07-31T11:04:00.288+03:00  INFO 5404 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./memory_persist/blog'
+2024-07-31T11:04:00.320+03:00  INFO 5404 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2024-07-31T11:04:00.413+03:00  INFO 5404 --- [main] c.g.todo.ToDoApplicationTests            : Started ToDoApplicationTests in 7.026 seconds (process running for 8.169)
+2024-07-31T11:04:00.523+03:00  INFO 5404 --- [main] c.g.t.u.commandlinerunner.MainRunner     : Blog Categories
+2024-07-31T11:04:01.097+03:00  INFO 5404 --- [main] c.g.todo.ToDoApplicationTests            : BeforeEach comes before running test methods
+2024-07-31T11:04:01.144+03:00  INFO 5404 --- [main] c.g.todo.ToDoApplicationTests            : AfterEach comes after all of these methods 
+2024-07-31T11:04:01.160+03:00  INFO 5404 --- [main] c.g.todo.ToDoApplicationTests            : BeforeEach comes before running test methods
+2024-07-31T11:04:01.332+03:00  INFO 5404 --- [main] c.g.todo.ToDoApplicationTests            : AfterEach comes after all of these methods 
+2024-07-31T11:04:01.332+03:00  INFO 5404 --- [main] c.g.todo.ToDoApplicationTests            : BeforeEach comes before running test methods
+2024-07-31T11:04:01.347+03:00  INFO 5404 --- [main] c.g.todo.ToDoApplicationTests            : AfterEach comes after all of these methods 
+2024-07-31T11:04:01.347+03:00  INFO 5404 --- [main] c.g.todo.ToDoApplicationTests            : BeforeEach comes before running test methods
+2024-07-31T11:04:01.379+03:00  INFO 5404 --- [main] c.g.todo.ToDoApplicationTests            : AfterEach comes after all of these methods 
+2024-07-31T11:04:01.379+03:00  INFO 5404 --- [main] c.g.todo.ToDoApplicationTests            : BeforeEach comes before running test methods
+2024-07-31T11:04:01.379+03:00  INFO 5404 --- [main] c.g.todo.ToDoApplicationTests            : AfterEach comes after all of these methods 
+2024-07-31T11:04:01.394+03:00  INFO 5404 --- [main] c.g.todo.ToDoApplicationTests            : AfterAll comes after all methods have run
+2024-07-31T11:04:01.457+03:00 DEBUG 5404 --- [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@4287d447, started on Wed Jul 31 13:33:53 IST 2024
+2024-07-31T11:04:01.457+03:00  INFO 5404 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-31T11:04:01.472+03:00 ERROR 5404 --- [SpringApplicationShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2024-07-31T11:04:01.472+03:00 ERROR 5404 --- [SpringApplicationShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2024-07-31T11:04:01.472+03:00  WARN 5404 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'entityManagerFactory': org.hibernate.exception.JDBCConnectionException: Unable to release JDBC Connection used for DDL execution [Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]] [n/a]
+2024-07-31T11:04:01.472+03:00  INFO 5404 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-31T11:04:01.486+03:00  INFO 5404 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-31T11:06:30.364+03:00  INFO 17640 --- [main] c.g.todo.ToDoApplicationTests            : Starting ToDoApplicationTests using Java 21.0.2 with PID 17640 (started by duzgu in D:\Spring-Boot\To-Do)
+2024-07-31T11:06:30.364+03:00  INFO 17640 --- [main] c.g.todo.ToDoApplicationTests            : The following 1 profile is active: "frontend"
+2024-07-31T11:06:30.406+03:00 DEBUG 17640 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@6d868997
+2024-07-31T11:06:31.596+03:00  INFO 17640 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-31T11:06:31.658+03:00  INFO 17640 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 1 JPA repository interfaces.
+2024-07-31T11:06:32.743+03:00  INFO 17640 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-31T11:06:32.774+03:00  INFO 17640 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-31T11:06:33.009+03:00  INFO 17640 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./memory_persist/blog user=SA
+2024-07-31T11:06:33.009+03:00  INFO 17640 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-31T11:06:33.837+03:00  INFO 17640 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-31T11:06:34.605+03:00  WARN 17640 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-31T11:06:34.777+03:00 DEBUG 17640 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-07-31T11:06:34.871+03:00 DEBUG 17640 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2024-07-31T11:06:35.553+03:00 DEBUG 17640 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2024-07-31T11:06:35.569+03:00 DEBUG 17640 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-07-31T11:06:35.600+03:00  WARN 17640 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-07-31T11:06:36.038+03:00  INFO 17640 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./memory_persist/blog'
+2024-07-31T11:06:36.069+03:00  INFO 17640 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2024-07-31T11:06:36.147+03:00  INFO 17640 --- [main] c.g.todo.ToDoApplicationTests            : Started ToDoApplicationTests in 6.191 seconds (process running for 7.374)
+2024-07-31T11:06:36.241+03:00  INFO 17640 --- [main] c.g.t.u.commandlinerunner.MainRunner     : Blog Categories
+2024-07-31T11:06:36.850+03:00  INFO 17640 --- [main] c.g.todo.ToDoApplicationTests            : BeforeEach comes before running test methods
+2024-07-31T11:06:36.897+03:00  INFO 17640 --- [main] c.g.todo.ToDoApplicationTests            : AfterEach comes after all of these methods 
+2024-07-31T11:06:36.913+03:00  INFO 17640 --- [main] c.g.todo.ToDoApplicationTests            : BeforeEach comes before running test methods
+2024-07-31T11:06:37.038+03:00  INFO 17640 --- [main] c.g.todo.ToDoApplicationTests            : AfterEach comes after all of these methods 
+2024-07-31T11:06:37.053+03:00  INFO 17640 --- [main] c.g.todo.ToDoApplicationTests            : BeforeEach comes before running test methods
+2024-07-31T11:06:37.069+03:00  INFO 17640 --- [main] c.g.todo.ToDoApplicationTests            : AfterEach comes after all of these methods 
+2024-07-31T11:06:37.069+03:00  INFO 17640 --- [main] c.g.todo.ToDoApplicationTests            : BeforeEach comes before running test methods
+2024-07-31T11:06:37.069+03:00  INFO 17640 --- [main] c.g.todo.ToDoApplicationTests            : AfterEach comes after all of these methods 
+2024-07-31T11:06:37.069+03:00  INFO 17640 --- [main] c.g.todo.ToDoApplicationTests            : AfterAll comes after all methods have run
+2024-07-31T11:06:37.131+03:00 DEBUG 17640 --- [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@6d868997, started on Wed Jul 31 13:36:30 IST 2024
+2024-07-31T11:06:37.131+03:00  INFO 17640 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-31T11:06:37.147+03:00 ERROR 17640 --- [SpringApplicationShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2024-07-31T11:06:37.147+03:00 ERROR 17640 --- [SpringApplicationShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2024-07-31T11:06:37.147+03:00  WARN 17640 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'entityManagerFactory': org.hibernate.exception.JDBCConnectionException: Unable to release JDBC Connection used for DDL execution [Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]] [n/a]
+2024-07-31T11:06:37.147+03:00  INFO 17640 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-31T11:06:37.147+03:00  INFO 17640 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-31T11:34:48.365+03:00  INFO 7224 --- [main] c.g.todo.ToDoApplicationTests            : Starting ToDoApplicationTests using Java 21.0.2 with PID 7224 (started by duzgu in D:\Spring-Boot\To-Do)
+2024-07-31T11:34:48.365+03:00  INFO 7224 --- [main] c.g.todo.ToDoApplicationTests            : The following 1 profile is active: "frontend"
+2024-07-31T11:34:48.405+03:00 DEBUG 7224 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@6d868997
+2024-07-31T11:34:49.526+03:00  INFO 7224 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-31T11:34:49.573+03:00  INFO 7224 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 1 JPA repository interfaces.
+2024-07-31T11:34:50.586+03:00  INFO 7224 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-31T11:34:50.617+03:00  INFO 7224 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-31T11:34:50.820+03:00  INFO 7224 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./memory_persist/blog user=SA
+2024-07-31T11:34:50.820+03:00  INFO 7224 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-31T11:34:51.602+03:00  INFO 7224 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-31T11:34:52.383+03:00  WARN 7224 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-31T11:34:52.555+03:00 DEBUG 7224 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-07-31T11:34:52.680+03:00 DEBUG 7224 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2024-07-31T11:34:53.425+03:00 DEBUG 7224 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2024-07-31T11:34:53.425+03:00 DEBUG 7224 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-07-31T11:34:53.472+03:00  WARN 7224 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-07-31T11:34:53.878+03:00  INFO 7224 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./memory_persist/blog'
+2024-07-31T11:34:53.909+03:00  INFO 7224 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2024-07-31T11:34:53.987+03:00  INFO 7224 --- [main] c.g.todo.ToDoApplicationTests            : Started ToDoApplicationTests in 6.001 seconds (process running for 7.128)
+2024-07-31T11:34:54.083+03:00  INFO 7224 --- [main] c.g.t.u.commandlinerunner.MainRunner     : Blog Categories
+2024-07-31T11:34:54.631+03:00  INFO 7224 --- [main] c.g.todo.ToDoApplicationTests            : BeforeEach comes before running test methods
+2024-07-31T11:34:54.678+03:00  INFO 7224 --- [main] c.g.todo.ToDoApplicationTests            : AfterEach comes after all of these methods 
+2024-07-31T11:34:54.693+03:00  INFO 7224 --- [main] c.g.todo.ToDoApplicationTests            : BeforeEach comes before running test methods
+2024-07-31T11:34:54.803+03:00  INFO 7224 --- [main] c.g.todo.ToDoApplicationTests            : AfterEach comes after all of these methods 
+2024-07-31T11:34:54.803+03:00  INFO 7224 --- [main] c.g.todo.ToDoApplicationTests            : BeforeEach comes before running test methods
+2024-07-31T11:34:54.834+03:00  INFO 7224 --- [main] c.g.todo.ToDoApplicationTests            : AfterEach comes after all of these methods 
+2024-07-31T11:34:54.834+03:00  INFO 7224 --- [main] c.g.todo.ToDoApplicationTests            : BeforeEach comes before running test methods
+2024-07-31T11:34:54.849+03:00  INFO 7224 --- [main] c.g.todo.ToDoApplicationTests            : AfterEach comes after all of these methods 
+2024-07-31T11:34:54.849+03:00  INFO 7224 --- [main] c.g.todo.ToDoApplicationTests            : AfterAll comes after all methods have run
+2024-07-31T11:34:54.896+03:00 DEBUG 7224 --- [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@6d868997, started on Wed Jul 31 14:04:48 IST 2024
+2024-07-31T11:34:54.912+03:00  INFO 7224 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-31T11:34:54.912+03:00 ERROR 7224 --- [SpringApplicationShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2024-07-31T11:34:54.912+03:00 ERROR 7224 --- [SpringApplicationShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2024-07-31T11:34:54.912+03:00  WARN 7224 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'entityManagerFactory': org.hibernate.exception.JDBCConnectionException: Unable to release JDBC Connection used for DDL execution [Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]] [n/a]
+2024-07-31T11:34:54.912+03:00  INFO 7224 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-31T11:34:54.928+03:00  INFO 7224 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
