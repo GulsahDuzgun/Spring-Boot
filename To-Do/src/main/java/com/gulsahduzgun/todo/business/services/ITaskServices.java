@@ -27,7 +27,7 @@ public interface ITaskServices<D,E> {
     public D taskUpdateById(Long id,D d);
 
     // DELETE
-    public D taskDeleteById(Long id);
+    public D taskDeleteById(Long taskID);
 
     // SPEED DATA
     public String taskSpeedData(Integer data);

@@ -127,10 +127,10 @@ public class TaskServicesImpl implements ITaskServices<TaskDto, TaskEntity> {
     // DELETE
     @Transactional
     @Override
-    public TaskDto taskDeleteById(Long id) {
-        TaskDto findTaskDto=taskFindById(id);
+    public TaskDto taskDeleteById(Long taskID) {
+        TaskDto findTaskDto=taskFindById(taskID);
         if(findTaskDto!=null){
-            iTaskRepository.deleteById(id);
+            iTaskRepository.deleteById(taskID);
             return findTaskDto;
         }
         return null;

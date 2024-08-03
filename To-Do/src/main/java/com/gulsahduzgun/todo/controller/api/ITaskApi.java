@@ -1,4 +1,4 @@
-package com.gulsahduzgun.todo.controller.api.impl;
+package com.gulsahduzgun.todo.controller.api;
 
 import org.springframework.http.ResponseEntity;
 

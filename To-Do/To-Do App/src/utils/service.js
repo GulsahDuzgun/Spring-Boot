@@ -33,3 +33,12 @@ export async function updateTask(id) {
   if (!response.ok)
     throw new Error("There is an error occured while updating task");
 }
+
+export async function deleteTask(id) {
+  const response = await fetch(`${BASE_URL}/task/api/v1/delete/${id}`, {
+    method: "DELETE",
+  });
+
+  if (!response.ok)
+    throw new Error("There is an error occured while deleting task");
+}

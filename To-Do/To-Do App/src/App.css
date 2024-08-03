@@ -237,12 +237,12 @@ body {
   border: none;
   border-radius: 3px;
   font-weight: 600;
+  cursor: pointer;
 }
 
 .btn__cancel {
   background-color: #c92a2a;
   color: #fff;
-  cursor: pointer;
 }
 
 .delete__text {
