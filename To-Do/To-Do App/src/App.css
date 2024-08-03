@@ -101,22 +101,32 @@ body {
   margin-bottom: 1.2rem;
 }
 
-.task .task--detail {
+.task .task__detail {
   display: flex;
   align-items: center;
   gap: 1.2rem;
 }
 
-.task .task--title {
+.task .task__title {
   font-family: var(--font-familt-bold);
 }
 
-.task .task--btn {
+.task .task__btn {
   display: flex;
   gap: 0.4rem;
 }
 
-.task .task--btn button {
+.task .task__status {
+  display: block;
+  font-size: 1.2rem;
+  align-items: center;
+  text-transform: uppercase;
+  padding: 0.3rem 0.6rem;
+  font-family: var(--font-familt-bold);
+  border-radius: 11px;
+}
+
+.task .task__btn button {
   font-size: 1.6rem;
   display: inline-flex;
   align-items: center;
