@@ -1,31 +1,45 @@
 import { useTasks } from "../utils/ContextApi";
 
-export default function Modal(id, message, executedFunc) {
-  const {
-    isModalOpen,
-    modalWord,
-    setModalWord,
-    currentTask,
-    setCurrentTask,
-    setIsModalOpen,
-  } = useTasks();
+const statusColors = {
+  not_started: "#ff8787",
+  in_progress: "#ffd43b",
+  done: "#69db7c",
+};
+
+export default function Modal(id) {
+  const { isModalOpen, currentTask } = useTasks();
   if (isModalOpen)
     return (
       <div className="modal__container">
         <div className="modal">
           <div className="modal__header">
-            <p className="edited__taskName">{currentTask.taskName}</p>
-            <span className="edited__taskStatus">
+            <p className="current__taskName">{currentTask.taskName}</p>
+            <span
+              className="current__taskStatus task__status"
+              style={{
+                backgroundColor:
+                  statusColors[
+                    `${currentTask?.statusName
+                      ?.replace(" ", "_")
+                      .toLowerCase()}`
+                  ],
+              }}
+            >
               {" "}
-              {currentTask.taskStatus}
+              {currentTask.statusName}
             </span>
           </div>
           <div className="modal__body">
-            <p className="edited__task">{currentTask.task}</p>
+            <p className="current__task">{currentTask.task}</p>
           </div>
           <div className="modal__footer">
-            <button onClick={() => setIsModalOpen((s) => !s)}>Cancel</button>
-            <button onClick={() => executedFunc(id)}>{modalWord}</button>
+            <button
+              className="btn__cancel"
+              onClick={() => setIsModalOpen((s) => !s)}
+            >
+              Cancel
+            </button>
+            <button></button>
           </div>
         </div>
       </div>

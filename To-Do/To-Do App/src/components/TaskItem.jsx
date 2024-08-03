@@ -9,12 +9,11 @@ const statusColors = {
 };
 
 export default function TaskItem({ tasks }) {
-  const { setIsModalOpen, setModalWord, setCurrentTask } = useTasks();
+  const { setDeleteModalOpen, setCurrentTask } = useTasks();
 
-  function handleOpenModal(task, word) {
-    setIsModalOpen((s) => !s);
+  function handleDeleteModal(task) {
+    setDeleteModalOpen((s) => !s);
     setCurrentTask(task);
-    setModalWord(word);
   }
 
   return tasks?.map((task, indx) => (
@@ -35,10 +34,10 @@ export default function TaskItem({ tasks }) {
         <p className="task__text">{task.task}</p>
       </div>
       <div className="task__btn">
-        <button onClick={() => handleOpenModal(task, "Update")}>
+        <button onClick={() => handleDeleteModal(task)}>
           <HiMiniPencilSquare />
         </button>
-        <button>
+        <button onClick={() => handleDeleteModal(task)}>
           <HiMiniTrash />
         </button>
       </div>

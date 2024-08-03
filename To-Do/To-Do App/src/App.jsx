@@ -7,6 +7,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import ContextProvider from "./utils/ContextApi";
 import Modal from "./components/Modal";
+import DeleteModal from "./components/DeleteModal";
 
 function App() {
   const queryClient = new QueryClient({
@@ -23,6 +24,7 @@ function App() {
         <ReactQueryDevtools initialIsOpen={false} />
         <div className="container">
           <Modal />
+          <DeleteModal />
           <Header />
           <main className="main">
             <StatusButtonsRow />
