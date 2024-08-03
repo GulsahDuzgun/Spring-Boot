@@ -1,4 +1,6 @@
 import { HiMiniTrash, HiMiniPencilSquare } from "react-icons/hi2";
+import { updateTask } from "../utils/service";
+import { useTasks } from "../utils/ContextApi";
 
 const statusColors = {
   not_started: "#ff8787",
@@ -7,6 +9,12 @@ const statusColors = {
 };
 
 export default function TaskItem({ tasks }) {
+  const { setIsModalOpen } = useTasks();
+
+  function handleOpenModal(id, stringText, executedFunc) {
+    setIsModalOpen((s) => !s);
+  }
+
   return tasks?.map((task, indx) => (
     <li className="task" key={indx}>
       <div className="task__detail">
@@ -25,7 +33,7 @@ export default function TaskItem({ tasks }) {
         <p className="task__text">{task.task}</p>
       </div>
       <div className="task__btn">
-        <button>
+        <button onClick={() => handleOpenModal(task.id, "Update", updateTask)}>
           <HiMiniPencilSquare />
         </button>
         <button>

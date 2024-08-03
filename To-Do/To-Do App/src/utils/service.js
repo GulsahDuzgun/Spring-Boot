@@ -22,9 +22,14 @@ export async function createTask(data) {
     },
     body: JSON.stringify(data),
   });
-  console.log(response);
 
-  console.log(data);
   if (!response.ok)
     throw new Error("There is an error occured while sending created task ");
+}
+
+export async function updateTask(id) {
+  const response = await fetch(`${BASE_URL}//task/api/v1/update/${id}`);
+
+  if (!response.ok)
+    throw new Error("There is an error occured while updating task");
 }
