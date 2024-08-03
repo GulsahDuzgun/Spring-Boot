@@ -1819,3 +1819,105 @@ Caused by: java.lang.ClassCastException: class java.lang.String cannot be cast t
 2024-08-03T22:51:11.868+03:00 DEBUG 22944 --- [http-nio-4445-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
 2024-08-03T22:51:11.868+03:00 DEBUG 22944 --- [http-nio-4445-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[TaskDto(taskID=2, systemCreatedDate=Sun Aug 04 01:21:11 IST 2024, statusName=null, task=week-2, tas (truncated)...]
 2024-08-03T22:51:11.869+03:00 DEBUG 22944 --- [http-nio-4445-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-08-03T22:51:44.827+03:00 DEBUG 22944 --- [http-nio-4445-exec-1] o.s.web.servlet.DispatcherServlet        : OPTIONS "/task/api/v1/delete/2", parameters={}
+2024-08-03T22:51:44.828+03:00 DEBUG 22944 --- [http-nio-4445-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gulsahduzgun.todo.controller.api.impl.TaskApi#taskDeleteById(Long)
+2024-08-03T22:51:44.828+03:00 DEBUG 22944 --- [http-nio-4445-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-08-03T22:51:44.832+03:00 DEBUG 22944 --- [http-nio-4445-exec-4] o.s.web.servlet.DispatcherServlet        : DELETE "/task/api/v1/delete/2", parameters={}
+2024-08-03T22:51:44.833+03:00 DEBUG 22944 --- [http-nio-4445-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gulsahduzgun.todo.controller.api.impl.TaskApi#taskDeleteById(Long)
+2024-08-03T22:51:44.837+03:00 DEBUG 22944 --- [http-nio-4445-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-08-03T22:51:44.837+03:00 DEBUG 22944 --- [http-nio-4445-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [TaskDto(taskID=2, systemCreatedDate=Sun Aug 04 01:21:44 IST 2024, statusName=null, task=week-2, task (truncated)...]
+2024-08-03T22:51:44.838+03:00 DEBUG 22944 --- [http-nio-4445-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-08-03T22:51:51.652+03:00 DEBUG 22944 --- [http-nio-4445-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/task/api/v1/list", parameters={}
+2024-08-03T22:51:51.653+03:00 DEBUG 22944 --- [http-nio-4445-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gulsahduzgun.todo.controller.api.impl.TaskApi#taskList()
+2024-08-03T22:51:51.656+03:00  INFO 22944 --- [http-nio-4445-exec-3] c.g.t.b.services.impl.TaskServicesImpl   :  Category Name Listesi: 0
+2024-08-03T22:51:51.657+03:00 DEBUG 22944 --- [http-nio-4445-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-08-03T22:51:51.657+03:00 DEBUG 22944 --- [http-nio-4445-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[]]
+2024-08-03T22:51:51.658+03:00 DEBUG 22944 --- [http-nio-4445-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-08-03T22:52:02.372+03:00  INFO 22944 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-03T22:52:02.685+03:00  INFO 22944 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-03T22:52:02.749+03:00  INFO 22944 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-03T22:52:04.974+03:00  INFO 21512 --- [restartedMain] com.gulsahduzgun.todo.ToDoApplication    : Starting ToDoApplication using Java 21.0.2 with PID 21512 (D:\Spring-Boot\To-Do\target\classes started by duzgu in D:\Spring-Boot\To-Do)
+2024-08-03T22:52:04.976+03:00  INFO 21512 --- [restartedMain] com.gulsahduzgun.todo.ToDoApplication    : The following 1 profile is active: "frontend"
+2024-08-03T22:52:05.027+03:00  INFO 21512 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-03T22:52:05.027+03:00  INFO 21512 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-03T22:52:05.958+03:00  INFO 21512 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-03T22:52:06.006+03:00  INFO 21512 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40 ms. Found 1 JPA repository interfaces.
+2024-08-03T22:52:06.596+03:00  INFO 21512 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 4445 (http)
+2024-08-03T22:52:06.604+03:00  INFO 21512 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-03T22:52:06.604+03:00  INFO 21512 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2024-08-03T22:52:06.663+03:00  INFO 21512 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-03T22:52:06.663+03:00  INFO 21512 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1636 ms
+2024-08-03T22:52:06.744+03:00  INFO 21512 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-03T22:52:06.962+03:00  INFO 21512 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./memory_persist/task user=SA
+2024-08-03T22:52:06.964+03:00  INFO 21512 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-03T22:52:06.980+03:00  INFO 21512 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./memory_persist/task'
+2024-08-03T22:52:07.084+03:00 DEBUG 21512 --- [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2024-08-03T22:52:07.085+03:00 DEBUG 21512 --- [restartedMain] o.s.w.s.r.ResourceUrlEncodingFilter      : Filter 'resourceUrlEncodingFilter' configured for use
+2024-08-03T22:52:07.490+03:00  INFO 21512 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-03T22:52:08.292+03:00  INFO 21512 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-03T22:52:08.759+03:00  WARN 21512 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-03T22:52:08.854+03:00 DEBUG 21512 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-08-03T22:52:08.936+03:00 DEBUG 21512 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 10 mappings in 'requestMappingHandlerMapping'
+2024-08-03T22:52:09.377+03:00 DEBUG 21512 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2024-08-03T22:52:09.386+03:00 DEBUG 21512 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-08-03T22:52:09.413+03:00  WARN 21512 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-08-03T22:52:09.726+03:00  INFO 21512 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-03T22:52:09.734+03:00  INFO 21512 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 16 endpoint(s) beneath base path '/actuator'
+2024-08-03T22:52:09.808+03:00  INFO 21512 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 4445 (http) with context path ''
+2024-08-03T22:52:09.819+03:00  INFO 21512 --- [restartedMain] com.gulsahduzgun.todo.ToDoApplication    : Started ToDoApplication in 5.245 seconds (process running for 5.96)
+2024-08-03T22:52:09.825+03:00  INFO 21512 --- [restartedMain] c.g.t.u.commandlinerunner.MainRunner     : Blog Categories
+2024-08-03T22:52:10.132+03:00  INFO 21512 --- [RMI TCP Connection(5)-172.27.80.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-03T22:52:10.133+03:00  INFO 21512 --- [RMI TCP Connection(5)-172.27.80.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-03T22:52:10.133+03:00 DEBUG 21512 --- [RMI TCP Connection(5)-172.27.80.1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-08-03T22:52:10.133+03:00 DEBUG 21512 --- [RMI TCP Connection(5)-172.27.80.1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-08-03T22:52:10.133+03:00 DEBUG 21512 --- [RMI TCP Connection(5)-172.27.80.1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-08-03T22:52:10.134+03:00 DEBUG 21512 --- [RMI TCP Connection(5)-172.27.80.1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@677d7c6e
+2024-08-03T22:52:10.135+03:00 DEBUG 21512 --- [RMI TCP Connection(5)-172.27.80.1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@3fc51a1a
+2024-08-03T22:52:10.135+03:00 DEBUG 21512 --- [RMI TCP Connection(5)-172.27.80.1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-08-03T22:52:10.135+03:00  INFO 21512 --- [RMI TCP Connection(5)-172.27.80.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-08-03T22:52:10.190+03:00 DEBUG 21512 --- [http-nio-4445-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/task/api/v1/list", parameters={}
+2024-08-03T22:52:10.200+03:00 DEBUG 21512 --- [http-nio-4445-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gulsahduzgun.todo.controller.api.impl.TaskApi#taskList()
+2024-08-03T22:52:10.324+03:00  INFO 21512 --- [http-nio-4445-exec-1] c.g.t.b.services.impl.TaskServicesImpl   :  Category Name Listesi: 3
+2024-08-03T22:52:10.327+03:00 DEBUG 21512 --- [http-nio-4445-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-08-03T22:52:10.329+03:00 DEBUG 21512 --- [http-nio-4445-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[TaskDto(taskID=1, systemCreatedDate=Sun Aug 04 01:22:10 IST 2024, statusName=null, task=week-1, tas (truncated)...]
+2024-08-03T22:52:10.353+03:00 DEBUG 21512 --- [http-nio-4445-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-08-03T22:52:24.517+03:00 DEBUG 21512 --- [http-nio-4445-exec-2] o.s.web.servlet.DispatcherServlet        : OPTIONS "/task/api/v1/create", parameters={}
+2024-08-03T22:52:24.518+03:00 DEBUG 21512 --- [http-nio-4445-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gulsahduzgun.todo.controller.api.impl.TaskApi#taskCreate(TaskDto)
+2024-08-03T22:52:24.519+03:00 DEBUG 21512 --- [http-nio-4445-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-08-03T22:52:24.527+03:00 DEBUG 21512 --- [http-nio-4445-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/task/api/v1/create", parameters={}
+2024-08-03T22:52:24.527+03:00 DEBUG 21512 --- [http-nio-4445-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gulsahduzgun.todo.controller.api.impl.TaskApi#taskCreate(TaskDto)
+2024-08-03T22:52:24.556+03:00 DEBUG 21512 --- [http-nio-4445-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [TaskDto(taskID=null, systemCreatedDate=Sun Aug 04 01:22:24 IST 2024, statusName=Not Started, task=te (truncated)...]
+2024-08-03T22:52:24.615+03:00 DEBUG 21512 --- [http-nio-4445-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-08-03T22:52:24.616+03:00 DEBUG 21512 --- [http-nio-4445-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [TaskDto(taskID=4, systemCreatedDate=Sun Aug 04 01:22:24 IST 2024, statusName=Not Started, task=tet,  (truncated)...]
+2024-08-03T22:52:24.617+03:00 DEBUG 21512 --- [http-nio-4445-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-08-03T22:52:24.625+03:00 DEBUG 21512 --- [http-nio-4445-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/task/api/v1/list", parameters={}
+2024-08-03T22:52:24.626+03:00 DEBUG 21512 --- [http-nio-4445-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gulsahduzgun.todo.controller.api.impl.TaskApi#taskList()
+2024-08-03T22:52:24.630+03:00  INFO 21512 --- [http-nio-4445-exec-10] c.g.t.b.services.impl.TaskServicesImpl   :  Category Name Listesi: 4
+2024-08-03T22:52:24.630+03:00 DEBUG 21512 --- [http-nio-4445-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-08-03T22:52:24.631+03:00 DEBUG 21512 --- [http-nio-4445-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[TaskDto(taskID=1, systemCreatedDate=Sun Aug 04 01:22:24 IST 2024, statusName=null, task=week-1, tas (truncated)...]
+2024-08-03T22:52:24.632+03:00 DEBUG 21512 --- [http-nio-4445-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-08-03T22:52:29.045+03:00 DEBUG 21512 --- [http-nio-4445-exec-5] o.s.web.servlet.DispatcherServlet        : OPTIONS "/task/api/v1/delete/4", parameters={}
+2024-08-03T22:52:29.046+03:00 DEBUG 21512 --- [http-nio-4445-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gulsahduzgun.todo.controller.api.impl.TaskApi#taskDeleteById(Long)
+2024-08-03T22:52:29.047+03:00 DEBUG 21512 --- [http-nio-4445-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-08-03T22:52:29.052+03:00 DEBUG 21512 --- [http-nio-4445-exec-6] o.s.web.servlet.DispatcherServlet        : DELETE "/task/api/v1/delete/4", parameters={}
+2024-08-03T22:52:29.052+03:00 DEBUG 21512 --- [http-nio-4445-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gulsahduzgun.todo.controller.api.impl.TaskApi#taskDeleteById(Long)
+2024-08-03T22:52:29.076+03:00 DEBUG 21512 --- [http-nio-4445-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-08-03T22:52:29.076+03:00 DEBUG 21512 --- [http-nio-4445-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [TaskDto(taskID=4, systemCreatedDate=Sun Aug 04 01:22:29 IST 2024, statusName=Not Started, task=tet,  (truncated)...]
+2024-08-03T22:52:29.077+03:00 DEBUG 21512 --- [http-nio-4445-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-08-03T22:54:00.609+03:00 DEBUG 21512 --- [http-nio-4445-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/task/api/v1/list", parameters={}
+2024-08-03T22:54:00.610+03:00 DEBUG 21512 --- [http-nio-4445-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gulsahduzgun.todo.controller.api.impl.TaskApi#taskList()
+2024-08-03T22:54:00.616+03:00  INFO 21512 --- [http-nio-4445-exec-8] c.g.t.b.services.impl.TaskServicesImpl   :  Category Name Listesi: 3
+2024-08-03T22:54:00.616+03:00 DEBUG 21512 --- [http-nio-4445-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-08-03T22:54:00.617+03:00 DEBUG 21512 --- [http-nio-4445-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[TaskDto(taskID=1, systemCreatedDate=Sun Aug 04 01:24:00 IST 2024, statusName=null, task=week-1, tas (truncated)...]
+2024-08-03T22:54:00.619+03:00 DEBUG 21512 --- [http-nio-4445-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-08-03T22:54:03.864+03:00 DEBUG 21512 --- [http-nio-4445-exec-9] o.s.web.servlet.DispatcherServlet        : DELETE "/task/api/v1/delete/2", parameters={}
+2024-08-03T22:54:03.865+03:00 DEBUG 21512 --- [http-nio-4445-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gulsahduzgun.todo.controller.api.impl.TaskApi#taskDeleteById(Long)
+2024-08-03T22:54:03.868+03:00 DEBUG 21512 --- [http-nio-4445-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-08-03T22:54:03.868+03:00 DEBUG 21512 --- [http-nio-4445-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [TaskDto(taskID=2, systemCreatedDate=Sun Aug 04 01:24:03 IST 2024, statusName=null, task=week-2, task (truncated)...]
+2024-08-03T22:54:03.869+03:00 DEBUG 21512 --- [http-nio-4445-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-08-03T22:54:03.879+03:00 DEBUG 21512 --- [http-nio-4445-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/task/api/v1/list", parameters={}
+2024-08-03T22:54:03.880+03:00 DEBUG 21512 --- [http-nio-4445-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gulsahduzgun.todo.controller.api.impl.TaskApi#taskList()
+2024-08-03T22:54:03.883+03:00  INFO 21512 --- [http-nio-4445-exec-4] c.g.t.b.services.impl.TaskServicesImpl   :  Category Name Listesi: 2
+2024-08-03T22:54:03.884+03:00 DEBUG 21512 --- [http-nio-4445-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-08-03T22:54:03.884+03:00 DEBUG 21512 --- [http-nio-4445-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[TaskDto(taskID=1, systemCreatedDate=Sun Aug 04 01:24:03 IST 2024, statusName=null, task=week-1, tas (truncated)...]
+2024-08-03T22:54:03.885+03:00 DEBUG 21512 --- [http-nio-4445-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK

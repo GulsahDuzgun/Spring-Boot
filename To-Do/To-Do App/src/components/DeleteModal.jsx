@@ -13,7 +13,7 @@ export default function DeleteModal() {
     onSuccess: () => {
       setDeleteModalOpen(false);
       queryClient.invalidateQueries({
-        queryKey: ["task"],
+        queryKey: ["tasks"],
       });
     },
   });
