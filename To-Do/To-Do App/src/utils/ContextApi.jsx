@@ -5,10 +5,21 @@ const TaskContext = createContext();
 export default function ContextProvider({ children }) {
   const [isFormOpen, setIsFormOpen] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalWord, setModalWord] = useState("");
+  const [currentTask, setCurrentTask] = useState({});
 
   return (
     <TaskContext.Provider
-      value={{ isFormOpen, setIsFormOpen, isModalOpen, setIsModalOpen }}
+      value={{
+        isFormOpen,
+        setIsFormOpen,
+        isModalOpen,
+        setIsModalOpen,
+        modalWord,
+        setModalWord,
+        currentTask,
+        setCurrentTask,
+      }}
     >
       {children}
     </TaskContext.Provider>

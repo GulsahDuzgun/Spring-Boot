@@ -1,6 +1,6 @@
 import { HiMiniTrash, HiMiniPencilSquare } from "react-icons/hi2";
-import { updateTask } from "../utils/service";
 import { useTasks } from "../utils/ContextApi";
+import { useQuery, useQueryClient } from "@tanstack/react-query";
 
 const statusColors = {
   not_started: "#ff8787",
@@ -9,10 +9,12 @@ const statusColors = {
 };
 
 export default function TaskItem({ tasks }) {
-  const { setIsModalOpen } = useTasks();
+  const { setIsModalOpen, setModalWord, setCurrentTask } = useTasks();
 
-  function handleOpenModal(id, stringText, executedFunc) {
+  function handleOpenModal(task, word) {
     setIsModalOpen((s) => !s);
+    setCurrentTask(task);
+    setModalWord(word);
   }
 
   return tasks?.map((task, indx) => (
@@ -33,7 +35,7 @@ export default function TaskItem({ tasks }) {
         <p className="task__text">{task.task}</p>
       </div>
       <div className="task__btn">
-        <button onClick={() => handleOpenModal(task.id, "Update", updateTask)}>
+        <button onClick={() => handleOpenModal(task, "Update")}>
           <HiMiniPencilSquare />
         </button>
         <button>
