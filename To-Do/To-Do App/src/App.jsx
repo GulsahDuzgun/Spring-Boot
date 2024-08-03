@@ -5,6 +5,7 @@ import StatusButtonsRow from "./components/StatusButtonsRow";
 import TaskList from "./components/TaskList";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
+import ContextProvider from "./utils/ContextApi";
 
 function App() {
   const queryClient = new QueryClient({
@@ -17,15 +18,17 @@ function App() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <ReactQueryDevtools initialIsOpen={false} />
-      <div className='container'>
-        <Header />
-        <main className='main'>
-          <StatusButtonsRow />
-          <Form />
-          <TaskList />
-        </main>
-      </div>
+      <ContextProvider>
+        <ReactQueryDevtools initialIsOpen={false} />
+        <div className='container'>
+          <Header />
+          <main className='main'>
+            <StatusButtonsRow />
+            <Form />
+            <TaskList />
+          </main>
+        </div>
+      </ContextProvider>
     </QueryClientProvider>
   );
 }
