@@ -1,10 +1,21 @@
+import { useQueryClient } from "@tanstack/react-query";
 import { useTasks } from "../utils/ContextApi";
+import { createTask } from "../utils/helpers";
 
 export default function Form() {
-  const { isFormOpen, setIsOpen } = useTasks();
+  const { isFormOpen, setIsFormOpen } = useTasks();
+  const queryClient = useQueryClient();
 
-  function handleSubmit() {
-    setIsOpen(false);
+  async function handleSubmit(e) {
+    e.preventDefault();
+    setIsFormOpen(false);
+    const data = Object.fromEntries(
+      new FormData(document.querySelector("form.form__container")).entries()
+    );
+    await createTask(data);
+    queryClient.invalidateQueries({
+      queryKey: ["tasks"],
+    });
   }
 
   return (

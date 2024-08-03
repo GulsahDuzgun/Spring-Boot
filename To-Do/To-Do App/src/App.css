@@ -132,7 +132,7 @@ body {
   grid-template-columns: repeat(3, 1fr);
   column-gap: 1.6rem;
   margin: 4rem 0;
-  transition: all 0.3s;
+  /* transition: all 0.3s; */
 }
 
 .form__row {
