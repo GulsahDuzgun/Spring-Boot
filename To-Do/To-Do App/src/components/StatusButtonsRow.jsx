@@ -1,10 +1,17 @@
 import { HiMiniPlus } from "react-icons/hi2";
 import { HiBars4 } from "react-icons/hi2";
+import { useTasks } from "../utils/ContextApi";
 
 function StatusButtonsRow() {
+  const { setIsFormOpen } = useTasks();
+
+  function handleOpenForm() {
+    setIsFormOpen((s) => !s);
+  }
+
   return (
     <div className='btn__container'>
-      <button type='button' className='btn__add-task'>
+      <button onClick={handleOpenForm} type='button' className='btn__add-task'>
         <span className='icon'>
           <HiMiniPlus className='icon--add' />
         </span>

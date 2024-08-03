@@ -3,7 +3,7 @@ import { createContext, useContext, useState } from "react";
 const TaskContext = createContext();
 
 export default function ContextProvider({ children }) {
-  const [isFormOpen, setIsFormOpen] = useState(true);
+  const [isFormOpen, setIsFormOpen] = useState(false);
 
   return (
     <TaskContext.Provider value={{ isFormOpen, setIsFormOpen }}>
@@ -15,6 +15,5 @@ export default function ContextProvider({ children }) {
 export function useTasks() {
   const context = useContext(TaskContext);
   if (!context) throw new Error("Undefined Boundries");
-  console.log(context);
   return context;
 }

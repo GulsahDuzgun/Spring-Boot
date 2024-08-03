@@ -20,9 +20,9 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <ContextProvider>
         <ReactQueryDevtools initialIsOpen={false} />
-        <div className='container'>
+        <div className="container">
           <Header />
-          <main className='main'>
+          <main className="main">
             <StatusButtonsRow />
             <Form />
             <TaskList />

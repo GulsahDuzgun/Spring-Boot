@@ -13,15 +13,18 @@ export async function getTasks() {
 }
 
 export async function createTask(data) {
+  if (!data) throw new Error("Data is empty");
+
   const response = await fetch(`${BASE_URL}/task/api/v1/create`, {
+    method: "POST",
     headers: {
-      Accept: "application/json",
       "Content-Type": "application/json",
     },
-    method: "POST",
     body: JSON.stringify(data),
   });
+  console.log(response);
 
+  console.log(data);
   if (!response.ok)
     throw new Error("There is an error occured while sending created task ");
 }

@@ -27,12 +27,10 @@ public class TaskDto extends AuditingAwareBaseDto implements Serializable {
     @Builder.Default
     private Date systemCreatedDate = new Date(System.currentTimeMillis());
 
-    @AUniqueTask
     @NotEmpty(message = "{task.status.validation.constraints.NotNull.message}")
     @Size(min = 2, message = "{task.status.least.validation.constraints.NotNull.message}")
     private String statusName;
 
-    @AUniqueTask
     @NotEmpty(message = "{task.status.validation.constraints.NotNull.message}")
     @Size(min = 2, message = "{task.status.least.validation.constraints.NotNull.message}")
     private  String task;
