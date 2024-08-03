@@ -9,11 +9,16 @@ const statusColors = {
 };
 
 export default function TaskItem({ tasks }) {
-  const { setDeleteModalOpen, setCurrentTask } = useTasks();
+  const { setDeleteModalOpen, setUpdateModalOpen, setCurrentTask } = useTasks();
 
   function handleDeleteModal(task) {
-    setDeleteModalOpen((s) => !s);
+    setDeleteModalOpen(true);
     setCurrentTask(task);
+  }
+
+  function handleUpdateModal(task) {
+    setCurrentTask(task);
+    setUpdateModalOpen(true);
   }
 
   return tasks?.map((task, indx) => (
@@ -34,7 +39,7 @@ export default function TaskItem({ tasks }) {
         <p className="task__text">{task.task}</p>
       </div>
       <div className="task__btn">
-        <button onClick={() => handleDeleteModal(task)}>
+        <button onClick={() => handleUpdateModal(task)}>
           <HiMiniPencilSquare />
         </button>
         <button onClick={() => handleDeleteModal(task)}>

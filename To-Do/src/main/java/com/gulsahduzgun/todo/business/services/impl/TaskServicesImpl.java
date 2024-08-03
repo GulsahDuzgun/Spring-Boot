@@ -118,6 +118,7 @@ public class TaskServicesImpl implements ITaskServices<TaskDto, TaskEntity> {
         if(findTaskDto!=null){
             TaskEntity taskEntity=dtoToEntity(taskDto);
             taskEntity.setTaskName(taskDto.getTaskName());
+            System.out.println(taskEntity);
             iTaskRepository.save(taskEntity);
             return findTaskDto;
         }

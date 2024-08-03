@@ -6,8 +6,8 @@ import TaskList from "./components/TaskList";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import ContextProvider from "./utils/ContextApi";
-import Modal from "./components/Modal";
 import DeleteModal from "./components/DeleteModal";
+import UpdateModal from "./components/UpdateModal";
 
 function App() {
   const queryClient = new QueryClient({
@@ -23,7 +23,7 @@ function App() {
       <ContextProvider>
         <ReactQueryDevtools initialIsOpen={false} />
         <div className="container">
-          <Modal />
+          <UpdateModal />
           <DeleteModal />
           <Header />
           <main className="main">

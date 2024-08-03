@@ -4,7 +4,7 @@ const TaskContext = createContext();
 
 export default function ContextProvider({ children }) {
   const [isFormOpen, setIsFormOpen] = useState(false);
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isUpdateModalOpen, setUpdateModalOpen] = useState(false);
   const [isDeleteModalOpen, setDeleteModalOpen] = useState(false);
   const [currentTask, setCurrentTask] = useState({});
 
@@ -13,8 +13,8 @@ export default function ContextProvider({ children }) {
       value={{
         isFormOpen,
         setIsFormOpen,
-        isModalOpen,
-        setIsModalOpen,
+        isUpdateModalOpen,
+        setUpdateModalOpen,
         currentTask,
         setCurrentTask,
         isDeleteModalOpen,

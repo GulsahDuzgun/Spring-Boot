@@ -22,6 +22,8 @@ import java.util.Date;
 public class TaskDto extends AuditingAwareBaseDto implements Serializable {
 
     public static final Long serialVersionUID = 1L;
+    
+    @AUniqueTask
     private Long taskID;
 
     @Builder.Default
@@ -35,7 +37,6 @@ public class TaskDto extends AuditingAwareBaseDto implements Serializable {
     @Size(min = 2, message = "{task.status.least.validation.constraints.NotNull.message}")
     private  String task;
 
-    @AUniqueTask
     @NotEmpty(message = "{task.status.validation.constraints.NotNull.message}")
     @Size(min = 2, message = "{task.status.least.validation.constraints.NotNull.message}")
     private  String taskName;

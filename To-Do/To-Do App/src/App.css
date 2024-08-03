@@ -253,3 +253,23 @@ body {
   text-transform: uppercase;
   margin: 2.8rem 0;
 }
+
+.input__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2.4rem 0rem;
+  gap: 1.6rem;
+}
+
+.input__row label {
+  font-size: 1.4rem;
+  font-family: var(--font-familt-bold);
+}
+
+.input__row input,
+.input__row textarea,
+.input__row select {
+  flex-grow: 1;
+  border-radius: 3px;
+}
