@@ -12,7 +12,7 @@ public interface ITaskApi<D> {
 
     public ResponseEntity<List<D>>  taskList();
 
-    public ResponseEntity<?>  taskUpdate(Long id,D d);
+    public ResponseEntity<?>  taskUpdateById(Long id,D d);
 
     public ResponseEntity<?> taskDeleteById(Long id);
 

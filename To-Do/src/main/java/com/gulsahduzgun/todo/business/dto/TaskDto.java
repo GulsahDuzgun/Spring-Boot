@@ -1,6 +1,5 @@
 package com.gulsahduzgun.todo.business.dto;
 
-import com.gulsahduzgun.todo.annotation.AUniqueTask;
 import com.gulsahduzgun.todo.audit.AuditingAwareBaseDto;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Size;
@@ -23,7 +22,6 @@ public class TaskDto extends AuditingAwareBaseDto implements Serializable {
 
     public static final Long serialVersionUID = 1L;
     
-    @AUniqueTask
     private Long taskID;
 
     @Builder.Default

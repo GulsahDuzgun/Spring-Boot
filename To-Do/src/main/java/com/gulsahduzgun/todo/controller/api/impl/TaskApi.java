@@ -57,7 +57,7 @@ public class TaskApi implements ITaskApi<TaskDto> {
     // http://localhost:4444/blog/category/api/v1/update/1
     @Override
     @PutMapping(value="/update/{id}")
-    public ResponseEntity<?> taskUpdate(@PathVariable(name = "id") Long id, @Valid @RequestBody TaskDto taskDto) {
+    public ResponseEntity<?> taskUpdateById(@PathVariable(name = "id") Long id, @Valid @RequestBody TaskDto taskDto) {
         return ResponseEntity.ok().body(iTaskServices.taskUpdateById(id,taskDto));
     }
 
