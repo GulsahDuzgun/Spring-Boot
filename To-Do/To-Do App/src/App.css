@@ -312,3 +312,13 @@ body {
   flex-grow: 1;
   border-radius: 3px;
 }
+
+.no__task {
+  background-color: #f1f3f5;
+  color: #212121;
+  font-size: 1.4rem;
+  padding: 1.2rem 2.4rem;
+  border-radius: 11px;
+  font-family: var(--font-familt-bold);
+  margin: 2.4rem 0;
+}
