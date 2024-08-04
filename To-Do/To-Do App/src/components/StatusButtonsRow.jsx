@@ -53,19 +53,21 @@ function StatusButtonsRow() {
         </span>
         Add Task
       </button>
-      <button className="btn__options" onClick={() => setIsOpen((s) => !s)}>
-        <HiBars4 />
-      </button>
-      {isOpen && (
-        <div className="btn__options--select">
-          <button onClick={handleDeleteAllTask} className="bnt__option">
-            Delete All
-          </button>
-          <button onClick={handleSortFunc} className="bnt__option">
-            Sort Tasks
-          </button>
-        </div>
-      )}
+      <div className="option__container">
+        <button className="btn__options" onClick={() => setIsOpen((s) => !s)}>
+          <HiBars4 />
+        </button>
+        {isOpen && (
+          <div className="btn__options--select">
+            <button onClick={handleDeleteAllTask} className="btn__option">
+              Delete All
+            </button>
+            <button onClick={handleSortFunc} className="btn__option">
+              Sort Tasks
+            </button>
+          </div>
+        )}
+      </div>
     </div>
   );
 }
