@@ -19,6 +19,7 @@ function StatusButtonsRow() {
     queryClient.invalidateQueries({
       queryKey: ["tasks"],
     });
+    setIsOpen(false);
   }
 
   const { mutate } = useMutation({
@@ -31,6 +32,7 @@ function StatusButtonsRow() {
 
   async function handleSortFunc() {
     mutate();
+    setIsOpen(false);
   }
 
   async function sortFunc() {
@@ -60,7 +62,7 @@ function StatusButtonsRow() {
             Delete All
           </button>
           <button onClick={handleSortFunc} className="bnt__option">
-            Sort tasks
+            Sort Tasks
           </button>
         </div>
       )}
