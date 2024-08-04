@@ -1,6 +1,6 @@
 # TO-DO List
 
-Advanced Fullstack Mastery Bootcamp ile öğrendiğim yeni bilgiler ışığında TO-DO List uygulaması için database bağlantısını sağladım ve API endpoint'leri oluşturdum. Başlangıçta ekrana gelen taskları CommandLineRunner ile oluşturup veri tabanından GET isteği ile aldıktan sonra task ekleme ile CREATE, güncelleme ile UPDATE, silme ile DELETE işlemilerini yaptım ve CRUD işlemlerini bu proje kapsamında gerçekleştirdim.
+Advanced Fullstack Mastery Bootcamp ile öğrendiğim yeni bilgiler ışığında TO-DO List uygulaması için database bağlantısını sağladım ve API endpoint'leri oluşturdum. Başlangıçta ekrana gelen taskları CommandLineRunner ile oluşturup veri tabanından GET isteği ile aldıktan sonra task ekleme ile CREATE, güncelleme ile UPDATE, silme ile DELETE işlemilerini yaptım ve CRUD işlemlerini bu proje kapsamında gerçekleştirdim. Bu projede React Query, Context API, Spring Boot, Docker, React.js, Spring Data, Spring API, MySQL, H2DB teknolojilerini kullandım.
 
 <img src="./readMe__img/to-do__1.png" width="1200">
 <br/>
