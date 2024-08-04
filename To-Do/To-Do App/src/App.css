@@ -21,15 +21,17 @@
 
 html {
   font-size: 62.5%;
+  height: 100%;
   font-family: var(--font-familt-light);
 }
 
 body {
   box-sizing: border-box;
-  padding: 4rem 8rem;
+  padding: 6rem 0rem;
   background-color: #f1f3f5;
   border: 11px;
   position: relative;
+  min-height: 100%;
 }
 
 .container {
@@ -37,19 +39,21 @@ body {
   max-width: 1200px;
   margin: auto;
   padding: 4rem 8rem;
+  height: 80vh;
 }
 
 .header {
   font-size: 4rem;
   font-family: var(--font-familt-bold);
   text-align: center;
-  padding: 4rem 8rem;
+  padding: 4rem;
 }
 
 .btn__container {
   display: flex;
   justify-content: end;
   align-items: center;
+  margin: 0 0 1.8rem;
 }
 
 .btn__add-task {

@@ -21,7 +21,6 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <ContextProvider>
-        <ReactQueryDevtools initialIsOpen={false} />
         <div className="container">
           <UpdateModal />
           <DeleteModal />
