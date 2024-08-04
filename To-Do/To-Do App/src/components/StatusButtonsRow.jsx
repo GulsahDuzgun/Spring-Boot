@@ -3,7 +3,7 @@ import { HiBars4 } from "react-icons/hi2";
 import { useTasks } from "../utils/ContextApi";
 import { useState } from "react";
 import { deleteAllTask } from "../utils/service";
-import { useQueryClient } from "@tanstack/react-query";
+import { useMutation, useQueryClient } from "@tanstack/react-query";
 
 function StatusButtonsRow() {
   const { setIsFormOpen } = useTasks();
@@ -19,6 +19,28 @@ function StatusButtonsRow() {
     queryClient.invalidateQueries({
       queryKey: ["tasks"],
     });
+  }
+
+  const { mutate } = useMutation({
+    mutationFn: sortFunc,
+    mutationKey: ["tasks"],
+    onSuccess: (data) => {
+      queryClient.setQueryData(["tasks"], data);
+    },
+  });
+
+  async function handleSortFunc() {
+    mutate();
+  }
+
+  async function sortFunc() {
+    const { data: taskArr } = queryClient.getQueryState(["tasks"]);
+    const newTaskList = taskArr
+      .slice()
+      .filter((item) => item.statusName === "Not Started")
+      .concat(taskArr.filter((t) => t.statusName === "In Progress"))
+      .concat(taskArr.filter((t) => t.statusName === "Done"));
+    return newTaskList;
   }
 
   return (
@@ -37,7 +59,9 @@ function StatusButtonsRow() {
           <button onClick={handleDeleteAllTask} className="bnt__option">
             Delete All
           </button>
-          <button className="bnt__option">Sort tasks</button>
+          <button onClick={handleSortFunc} className="bnt__option">
+            Sort tasks
+          </button>
         </div>
       )}
     </div>

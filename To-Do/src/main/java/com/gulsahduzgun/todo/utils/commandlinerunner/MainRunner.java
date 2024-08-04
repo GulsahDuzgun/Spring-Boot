@@ -32,14 +32,14 @@ public class MainRunner {
             TaskEntity taskEntity1=TaskEntity.builder().task("Task Header").taskName("Task Detail").statusName("Done").build();
             iTaskRepository.save(taskEntity1);
 
-            TaskEntity taskEntity2=TaskEntity.builder().task("Redux.js").taskName("Learn Redux.js").statusName("Not Started").build();
-            iTaskRepository.save(taskEntity2);
-
             TaskEntity taskEntity3=TaskEntity.builder().task("React.js").taskName("Make projects with React.js").statusName("In Progress").build();
             iTaskRepository.save(taskEntity3);
 
             TaskEntity taskEntity4=TaskEntity.builder().task("Java").taskName("Read more article about Java").statusName("In Progress").build();
             iTaskRepository.save(taskEntity4);
+
+            TaskEntity taskEntity2=TaskEntity.builder().task("Redux.js").taskName("Learn Redux.js").statusName("Not Started").build();
+            iTaskRepository.save(taskEntity2);
         };
     }
     // START

@@ -1,6 +1,5 @@
 import { HiMiniTrash, HiMiniPencilSquare } from "react-icons/hi2";
 import { useTasks } from "../utils/ContextApi";
-import { useQuery, useQueryClient } from "@tanstack/react-query";
 
 const statusColors = {
   not_started: "#ff8787",
