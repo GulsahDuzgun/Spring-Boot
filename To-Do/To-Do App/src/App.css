@@ -50,6 +50,7 @@ body {
   display: flex;
   justify-content: end;
   align-items: center;
+  position: relative;
 }
 
 .btn__add-task {
@@ -78,12 +79,34 @@ body {
 
 .btn__options {
   font-size: 1.4rem;
-  padding: 0 0.8rem;
+  padding: 0.8rem 1.2rem;
   border: none;
   background-color: transparent;
   color: #212121;
   border-radius: 0px;
   cursor: pointer;
+}
+
+.btn__options:hover {
+  background-color: #ced4da;
+}
+
+.btn__options--select {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 65%;
+  right: -5%;
+}
+
+.btn__options--select button {
+  background-color: #dee2e6;
+  border: 1px solid #212121;
+  border-radius: 3px;
+  padding: 0.6rem 0.8rem;
+  cursor: pointer;
+  font-family: var(--font-familt-light);
+  font-weight: 500;
 }
 
 .taskContainer {

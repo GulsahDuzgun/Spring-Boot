@@ -7,8 +7,6 @@ export async function getTasks() {
     throw new Error("There is an error occured while fetching tasks ");
 
   const data = await response.json();
-
-  console.log(data);
   return data;
 }
 

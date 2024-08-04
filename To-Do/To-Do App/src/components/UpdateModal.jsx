@@ -14,7 +14,6 @@ export default function UpdateModal() {
     );
 
     const resObj = { taskID: currentTask.taskID, ...data };
-    console.log(resObj);
     await updateTask(resObj);
     queryClient.invalidateQueries({
       queryKey: ["tasks"],

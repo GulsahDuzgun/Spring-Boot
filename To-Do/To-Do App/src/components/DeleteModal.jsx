@@ -6,7 +6,6 @@ export default function DeleteModal() {
   const { currentTask, isDeleteModalOpen, setDeleteModalOpen } = useTasks();
 
   const queryClient = useQueryClient();
-  console.log(currentTask);
 
   const { mutate: mutateFunc } = useMutation({
     mutationFn: () => deleteTask(currentTask.taskID),
